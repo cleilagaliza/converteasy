@@ -38,7 +38,7 @@ O ConvertEasy é uma aplicação web que converte valores entre Real (BRL) e Dó
 
 ## Teste da aba Rede
 
-<!-- Insira aqui a captura da aba Rede do navegador, mostrando a requisição à API. -->
+![Captura da aba Rede mostrando a requisição à AwesomeAPI](print-rede.png)
 
 A captura deve mostrar a requisição GET para a AwesomeAPI, sua URL e o status HTTP retornado. Ela permite verificar a comunicação entre a aplicação e o serviço de cotação.
 
