@@ -1,0 +1,14 @@
+
+# Configurações locais
+.env
+.env.*
+!.env.example
+
+# Editor e sistema operacional
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Dependências, caso sejam adicionadas futuramente
+node_modules/
