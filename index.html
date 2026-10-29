@@ -1,1 +1,54 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Converta valores entre Real e Dólar usando a cotação atualizada.">
+  <title>ConvertEasy | Conversor de Moedas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="cabecalho">
+    <h1>ConvertEasy</h1>
+    <p>Conversor de Real para Dólar e de Dólar para Real</p>
+  </header>
+
+  <main class="container">
+    <section class="conversor" aria-labelledby="titulo-conversor">
+      <h2 id="titulo-conversor">Converter moedas</h2>
+
+      <form id="form-conversao">
+        <label for="valor">Valor para converter</label>
+        <input
+          type="number"
+          id="valor"
+          name="valor"
+          min="0.01"
+          step="any"
+          placeholder="Ex.: 100,00"
+          required
+        >
+
+        <label for="direcao">Direção da conversão</label>
+        <select id="direcao" name="direcao">
+          <option value="BRL-USD">Real (BRL) para Dólar (USD)</option>
+          <option value="USD-BRL">Dólar (USD) para Real (BRL)</option>
+        </select>
+
+        <button type="submit" id="botao-converter">Converter</button>
+      </form>
+
+      <section id="resultado" class="resultado" aria-live="polite">
+        <p>Digite um valor e clique em Converter.</p>
+      </section>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>As cotações são informativas e podem variar.</p>
+    <p>Dados de câmbio fornecidos pela AwesomeAPI.</p>
+  </footer>
+</body>
+</html>
